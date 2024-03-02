@@ -23,7 +23,7 @@ const ContactForm = () => {
       number: number,
       id: nanoid(),
     };
-    if (contacts.contacts.fin(contact => contact.name === name)) {
+    if (contacts.contacts.find(contact => contact.name === name)) {
       alert(`${name} is already in contacts`);
     } else {
       dispatch(addContact(newContact));
