@@ -29,5 +29,5 @@ const Filter = () => {
 export default Filter;
 
 Filter.propTypes = {
-  onChange: propTypes.func,
+  changeFilter: propTypes.func,
 };
